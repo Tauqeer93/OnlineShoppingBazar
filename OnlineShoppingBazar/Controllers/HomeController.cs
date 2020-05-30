@@ -7,7 +7,8 @@ using System.Web.Mvc;
 namespace OnlineShoppingBazar.Controllers
 {
     public class HomeController : Controller
-    {
+    {      
+        [HttpGet]
         public ActionResult Index()
         {
             return View();
@@ -19,7 +20,7 @@ namespace OnlineShoppingBazar.Controllers
 
             return View();
         }
-
+        [HttpGet]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
