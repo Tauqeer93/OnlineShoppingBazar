@@ -12,7 +12,7 @@ namespace OnlineShoppingBazar.Controllers
         {
             return View();
         }
-
+        [HttpGet]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
